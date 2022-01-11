@@ -14,7 +14,8 @@ class ShoppingCategory {
             selectedCategory = readLine()
         }
         if (selectedCategory == "#") {
-            // Todo 1. 장바구니로 이동
+            val shoppingCart = ShoppingCart()
+            shoppingCart.showCartItems()
         } else {
             if(categories.contains(selectedCategory)){
                 val shoppingProductList = ShoppingProductList()
